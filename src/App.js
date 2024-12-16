@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import LoginComp from './authComp/LoginComp';
+import RegisterComp from './authComp/RegisterComp'
+import ChatWindowComp from './chatComp/ChatWindowComp';
+import FriendListComp from './friendsComp/FriendListComp.js'
+import AddFriendComp from './friendsComp/AddFriendComp.js'
+import {Route,Routes,BrowserRouter} from 'react-router-dom';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+<Routes>
+  <Route path='/' Component={LoginComp}></Route>
+  <Route path='/register' Component={RegisterComp}></Route>
+  <Route path='/chat/:id' Component={ChatWindowComp}></Route>
+  <Route path='/selectchat' Component={FriendListComp}></Route>
+  <Route path='/addfriend' Component={AddFriendComp}></Route>
+</Routes>
+</BrowserRouter>
   );
 }
 

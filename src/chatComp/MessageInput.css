@@ -1,0 +1,36 @@
+.message-input-container {
+    display: flex;
+    align-items: center;
+    background: #f7f7f7;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+  }
+  
+  .emoji-picker-container {
+    margin-right: 10px;
+  }
+  
+  .message-input-container input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+  
+  .message-input-container button {
+    padding: 8px 12px;
+    margin-right: 10px;
+    background: #007bff;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .message-input-container button:hover {
+    background: #0056b3;
+  }
+  
