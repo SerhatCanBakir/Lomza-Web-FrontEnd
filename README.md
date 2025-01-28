@@ -1,70 +1,118 @@
-# Getting Started with Create React App
+# 📡 Real-Time Chat Application Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is the **frontend** counterpart of the real-time chat application backend. Built using **React.js**, it provides a user-friendly interface for features like user authentication, group chats, friend requests, and real-time messaging.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+- **User Authentication**: Login and register forms for seamless user access.
+- **Real-Time Messaging**: Instant updates for messages and notifications.
+- **Group Chats**:
+  - Create and manage chat rooms.
+  - View and manage group members.
+- **Friend Management**:
+  - Send, accept, and decline friend requests.
+  - View all friends and manage connections.
+- **Responsive Design**: Optimized for both desktop and mobile devices.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Technologies Used
 
-### `npm test`
+- **React.js**: Core library for building the user interface.
+- **fetch**: For API communication with the backend.
+- **React Router**: For managing navigation and routes.
+- **Socket.IO Client**: For real-time WebSocket communication.
+- **CSS/SCSS**: For styling components.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🗂️ Project Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+Lomza-Web-FrontEnd/
+├── public/
+│   ├── index.html
+│   └── ...
+├── src/
+│   ├── authComp/
+│   │   ├── LoginComp.js
+│   │   ├── RegisterComp.js
+│   │   ├── LoginComp.css
+│   │   ├── RegisterComp.css
+│   │   └── ...
+│   ├── chatComp/
+│   │   ├── ChatMessageInput.js
+│   │   ├── ChatMessageList.js
+│   │   ├── ChatWindowComp.js
+│   │   ├── EmojiPickerComp.js
+│   │   ├── MessageInput.css
+│   │   ├── MessageList.css
+│   │   └── ...
+│   ├── friendsComp/
+│   │   ├── AddFriendComp.js
+│   │   ├── FriendListComp.js
+│   │   ├── FriendListComp.css
+│   │   ├── GroupAndFriendsManager.css
+│   │   └── ...
+│   ├── socketComp/
+│   │   ├── socketComp.js
+│   │   └── ...
+│   ├── App.js
+│   ├── index.js
+│   ├── index.css
+│   ├── reportWebVitals.js
+│   ├── setupTests.js
+│   ├── package.json
+│   ├── .gitignore
+│   └── README.md
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📦 How to Run the Project
 
-### `npm run eject`
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/SerhatCanBakir/Lomza-Web-FrontEnd.git
+   cd Lomza-Web-FrontEnd
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Start the development server:
+   ```bash
+   npm start
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. Open the application in your browser:
+   - [http://localhost:3000](http://localhost:3000)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 🔗 Backend Integration
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This frontend is designed to work seamlessly with the **Real-Time Chat Application Backend**. Ensure the backend is running and accessible at the correct endpoint for API communication.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Backend Repository: [GitHub Backend Link](https://github.com/SerhatCanBakir/LomzaWebBackEnd)
+- API Endpoints Used:
+  - **Authentication**: `/login`, `/register`
+  - **Friends**: `/friends`, `/addfriend/:id`
+  - **Groups**: `/groups/creategroup`, `/groups/:id/addmember`
+  - **Messages**: WebSocket events like `joinRoom`, `send-Messages`
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📌 Future Enhancements
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 📩 Contact
 
-### Making a Progressive Web App
+If you have any questions or suggestions, feel free to reach out:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- GitHub: [SerhatCanBakir](https://github.com/SerhatCanBakir)
+- Email: [serhatcan@example.com](mailto:serhatcan@example.com)
