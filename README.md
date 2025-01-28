@@ -114,4 +114,4 @@ This frontend is designed to work seamlessly with the **Real-Time Chat Applicati
 If you have any questions or suggestions, feel free to reach out:
 
 - GitHub: [SerhatCanBakir](https://github.com/SerhatCanBakir)
-- Email: [serhatcan@example.com](mailto:serhatcan@example.com)
+- Email: [serhat2534serhat@outlook.com](mailto:serhat2534serhat@outlook.com)
