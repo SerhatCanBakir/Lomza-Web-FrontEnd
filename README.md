@@ -107,7 +107,6 @@ This frontend is designed to work seamlessly with the **Real-Time Chat Applicati
 
 ---
 
-## 📌 Future Enhancements
 
 
 ## 📩 Contact
